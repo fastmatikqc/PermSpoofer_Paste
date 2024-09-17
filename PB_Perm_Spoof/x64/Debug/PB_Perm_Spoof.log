@@ -1,0 +1,17 @@
+﻿  PB_Perm_Spoof.cpp
+E:\ProjectBeyond Work\PermSpoof\PB_Perm_Spoof\PB_Perm_Spoof.cpp(70,9): error C2664: "int RARProcessFile(HANDLE,int,char *,char *)" : Konvertierung von Argument 3 von "const _Elem *" in "char *" nicht möglich
+E:\ProjectBeyond Work\PermSpoof\PB_Perm_Spoof\PB_Perm_Spoof.cpp(70,9): error C2664:         with
+E:\ProjectBeyond Work\PermSpoof\PB_Perm_Spoof\PB_Perm_Spoof.cpp(70,9): error C2664:         [
+E:\ProjectBeyond Work\PermSpoof\PB_Perm_Spoof\PB_Perm_Spoof.cpp(70,9): error C2664:             _Elem=char
+E:\ProjectBeyond Work\PermSpoof\PB_Perm_Spoof\PB_Perm_Spoof.cpp(70,9): error C2664:         ]
+      E:\ProjectBeyond Work\PermSpoof\PB_Perm_Spoof\PB_Perm_Spoof.cpp(70,64):
+      Durch die Konvertierung gehen Qualifizierer verloren
+      E:\ProjectBeyond Work\PermSpoof\PB_Perm_Spoof\unrar.h(180,15):
+      Siehe Deklaration von "RARProcessFile"
+      E:\ProjectBeyond Work\PermSpoof\PB_Perm_Spoof\PB_Perm_Spoof.cpp(70,9):
+      bei Anpassung der Argumentliste "(HANDLE, int, const _Elem *, int)"
+          with
+          [
+              _Elem=char
+          ]
+  

@@ -1,0 +1,10 @@
+﻿  PB_Perm_Spoof.cpp
+  Génération de code en cours
+  Previous IPDB not found, fall back to full compilation.
+  All 846 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Fin de la génération du code
+LINK : warning LNK4286: le symbole 'curl_easy_setopt' défini dans 'library_x64.lib(setopt.obj)' est importé par 'PB_Perm_Spoof.obj'
+LINK : warning LNK4286: le symbole 'curl_easy_cleanup' défini dans 'library_x64.lib(easy.obj)' est importé par 'PB_Perm_Spoof.obj'
+LINK : warning LNK4286: le symbole 'curl_easy_init' défini dans 'library_x64.lib(easy.obj)' est importé par 'PB_Perm_Spoof.obj'
+LINK : warning LNK4286: le symbole 'curl_easy_perform' défini dans 'library_x64.lib(easy.obj)' est importé par 'PB_Perm_Spoof.obj'
+  PB_Perm_Spoof.vcxproj -> C:\Users\zack\Desktop\SpoofSrc\PB_Perm_Spoof\x64\Release\Blitzspoofer.exe

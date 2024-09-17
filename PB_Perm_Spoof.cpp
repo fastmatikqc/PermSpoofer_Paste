@@ -14,9 +14,9 @@
 
 using namespace KeyAuth;
 
-std::string name = skCrypt("blitzspoofer").decrypt(); // Application Name
-std::string ownerid = skCrypt("UgmcnpGfFx").decrypt(); // Owner ID
-std::string secret = skCrypt("13eaed6fb30d044c98bf78da338531fed06d141a974df1394ff61a22adbfa0cd").decrypt(); // Application Secret
+std::string name = skCrypt("").decrypt(); // Application Name
+std::string ownerid = skCrypt("").decrypt(); // Owner ID
+std::string secret = skCrypt("").decrypt(); // Application Secret
 std::string version = skCrypt("1.0").decrypt(); // Application Version
 std::string url = skCrypt("https://keyauth.win/api/1.2/").decrypt(); // change if you're self-hosting
 std::string path = skCrypt("").decrypt(); // (OPTIONAL) see tutorial here https://www.youtube.com/watch?v=I9rxt821gMk&t=1s

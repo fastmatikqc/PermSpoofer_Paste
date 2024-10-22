@@ -24,6 +24,7 @@
     <ProjectGuid>{348dc512-1540-4087-8122-7195134a3419}</ProjectGuid>
     <RootNamespace>PBPermSpoof</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Kraftspoofer_temp</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -71,8 +72,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Users\zack\Desktop\SpoofSrc\PB_Perm_Spoof\curl;C:\Users\zack\Desktop\SpoofSrc\PB_Perm_Spoof;$(IncludePath)</IncludePath>
-    <TargetName>Blitzspoofer</TargetName>
+    <IncludePath>C:\Users\zack\Desktop\SpoofSrc\PB_Perm_Spoof\curl;C:\Users\zack\Desktop\SpoofSrc\PB_Perm_Spoof;C:\Users\zack\Desktop\PermSpoofer_Paste-main\curl;$(IncludePath)</IncludePath>
+    <TargetName>KraftSpoofer</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -146,6 +147,7 @@
     <ClInclude Include="auth\auth.hpp" />
     <ClInclude Include="auth\json.hpp" />
     <ClInclude Include="auth\utils.hpp" />
+    <ClInclude Include="color.hpp" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="skCrypt.h" />
     <ClInclude Include="zip.h" />
@@ -160,7 +162,7 @@
     <ResourceCompile Include="PB_Perm_Spoof.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\Pictures\favicon2.ico" />
+    <Image Include="..\FullProject\Kraftnite_Cheat\Project4\favicon.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

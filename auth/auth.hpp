@@ -14,9 +14,9 @@ namespace KeyAuth {
 	class api {
 	public:
 
-		std::string name, ownerid, secret, version, url, path;
+		std::string name, ownerid, secret, version, url;
 
-		api(std::string name, std::string ownerid, std::string secret, std::string version, std::string url, std::string path) : name(name), ownerid(ownerid), secret(secret), version(version), url(url), path(path) {}
+		api(std::string name, std::string ownerid, std::string secret, std::string version, std::string url) : name(name), ownerid(ownerid), secret(secret), version(version), url(url) {}
 
 		void ban(std::string reason = "");
 		void init();
@@ -36,11 +36,9 @@ namespace KeyAuth {
 		void regstr(std::string username, std::string password, std::string key, std::string email = "");
 		void chatget(std::string channel);
 		bool chatsend(std::string message, std::string channel);
-		void changeUsername(std::string newusername);
+		void changeusername(std::string newusername);
 		std::string fetchonline();
-		void fetchstats();
 		void forgot(std::string username, std::string email);
-		void logout();
 
 		class subscriptions_class {
 		public:
@@ -48,9 +46,14 @@ namespace KeyAuth {
 			std::string expiry;
 		};
 
-		class userdata {
+		class data_class {
 		public:
-
+			// app data
+			std::string numUsers;
+			std::string numOnlineUsers;
+			std::string numKeys;
+			std::string version;
+			std::string customerPanelLink;
 			// user data
 			std::string username;
 			std::string ip;
@@ -59,29 +62,13 @@ namespace KeyAuth {
 			std::string lastlogin;
 
 			std::vector<subscriptions_class> subscriptions;
-		};
 
-		class appdata {
-		public:
-			// app data
-			std::string numUsers;
-			std::string numOnlineUsers;
-			std::string numKeys;
-			std::string version;
-			std::string customerPanelLink;
-		};
-
-		class responsedata {
-		public:
 			// response data
 			std::vector<channel_struct> channeldata;
-			bool success{};
+			bool success;
 			std::string message;
 		};
-
-		userdata user_data;
-		appdata app_data;
-		responsedata response;
+		data_class data;
 
 	private:
 		std::string sessionid, enckey;

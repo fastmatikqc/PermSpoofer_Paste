@@ -37,15 +37,18 @@
       <Filter>lib</Filter>
     </ClInclude>
     <ClInclude Include="resource.h" />
+    <ClInclude Include="color.hpp">
+      <Filter>auth</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <Library Include="zip.lib">
+      <Filter>lib</Filter>
+    </Library>
     <Library Include="libcurl.lib">
       <Filter>lib</Filter>
     </Library>
     <Library Include="library_x64.lib">
-      <Filter>lib</Filter>
-    </Library>
-    <Library Include="zip.lib">
       <Filter>lib</Filter>
     </Library>
   </ItemGroup>
@@ -53,6 +56,6 @@
     <ResourceCompile Include="PB_Perm_Spoof.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\Pictures\favicon2.ico" />
+    <Image Include="..\FullProject\Kraftnite_Cheat\Project4\favicon.ico" />
   </ItemGroup>
 </Project>
